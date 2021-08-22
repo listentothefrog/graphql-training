@@ -5,6 +5,7 @@ const typeDefs = gql`
   type Query {
     hello: String
     another: String
+    number: Int
   }
 `;
 
@@ -14,6 +15,9 @@ const resolvers = {
   },
   Query: {
     another: () => "Another query",
+  },
+  Query: {
+    number: () => "123",
   },
 };
 
